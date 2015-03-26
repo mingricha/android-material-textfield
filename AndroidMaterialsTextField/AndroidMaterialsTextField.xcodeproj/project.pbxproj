@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD4E13AC1AC2F57000D4660D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4E13AB1AC2F57000D4660D /* AppDelegate.swift */; };
+		CD4E13AE1AC2F57000D4660D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4E13AD1AC2F57000D4660D /* ViewController.swift */; };
+		CD4E13B11AC2F57000D4660D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13AF1AC2F57000D4660D /* Main.storyboard */; };
+		CD4E13B31AC2F57000D4660D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13B21AC2F57000D4660D /* Images.xcassets */; };
+		CD4E13B61AC2F57000D4660D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13B41AC2F57000D4660D /* LaunchScreen.xib */; };
+		CD4E13C21AC2F57000D4660D /* AndroidMaterialsTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4E13C11AC2F57000D4660D /* AndroidMaterialsTextFieldTests.swift */; };
+		CD4E13D01AC31AC700D4660D /* AndroidTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4E13CF1AC31AC600D4660D /* AndroidTextField.swift */; };
+		CD4E13D21AC31B5900D4660D /* AndroidTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13D11AC31B5900D4660D /* AndroidTextField.xib */; };
+		CD4E13D41AC3368700D4660D /* AndroidTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4E13D31AC3368700D4660D /* AndroidTextFieldDelegate.swift */; };
+		CD4E13E81AC446BA00D4660D /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13D61AC446BA00D4660D /* Roboto-Black.ttf */; };
+		CD4E13E91AC446BA00D4660D /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13D71AC446BA00D4660D /* Roboto-BlackItalic.ttf */; };
+		CD4E13EA1AC446BA00D4660D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13D81AC446BA00D4660D /* Roboto-Bold.ttf */; };
+		CD4E13EB1AC446BA00D4660D /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13D91AC446BA00D4660D /* Roboto-BoldItalic.ttf */; };
+		CD4E13EC1AC446BA00D4660D /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13DA1AC446BA00D4660D /* Roboto-Italic.ttf */; };
+		CD4E13ED1AC446BA00D4660D /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13DB1AC446BA00D4660D /* Roboto-Light.ttf */; };
+		CD4E13EE1AC446BA00D4660D /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13DC1AC446BA00D4660D /* Roboto-LightItalic.ttf */; };
+		CD4E13EF1AC446BA00D4660D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13DD1AC446BA00D4660D /* Roboto-Medium.ttf */; };
+		CD4E13F01AC446BA00D4660D /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13DE1AC446BA00D4660D /* Roboto-MediumItalic.ttf */; };
+		CD4E13F11AC446BA00D4660D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13DF1AC446BA00D4660D /* Roboto-Regular.ttf */; };
+		CD4E13F21AC446BA00D4660D /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13E01AC446BA00D4660D /* Roboto-Thin.ttf */; };
+		CD4E13F31AC446BA00D4660D /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13E11AC446BA00D4660D /* Roboto-ThinItalic.ttf */; };
+		CD4E13F41AC446BA00D4660D /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13E21AC446BA00D4660D /* RobotoCondensed-Bold.ttf */; };
+		CD4E13F51AC446BA00D4660D /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13E31AC446BA00D4660D /* RobotoCondensed-BoldItalic.ttf */; };
+		CD4E13F61AC446BA00D4660D /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13E41AC446BA00D4660D /* RobotoCondensed-Italic.ttf */; };
+		CD4E13F71AC446BA00D4660D /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13E51AC446BA00D4660D /* RobotoCondensed-Light.ttf */; };
+		CD4E13F81AC446BA00D4660D /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13E61AC446BA00D4660D /* RobotoCondensed-LightItalic.ttf */; };
+		CD4E13F91AC446BA00D4660D /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4E13E71AC446BA00D4660D /* RobotoCondensed-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD4E13BC1AC2F57000D4660D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD4E139E1AC2F57000D4660D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD4E13A51AC2F57000D4660D;
+			remoteInfo = AndroidMaterialsTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD4E13A61AC2F57000D4660D /* AndroidMaterialsTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndroidMaterialsTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4E13AA1AC2F57000D4660D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4E13AB1AC2F57000D4660D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD4E13AD1AC2F57000D4660D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD4E13B01AC2F57000D4660D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD4E13B21AC2F57000D4660D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD4E13B51AC2F57000D4660D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CD4E13BB1AC2F57000D4660D /* AndroidMaterialsTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AndroidMaterialsTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4E13C01AC2F57000D4660D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4E13C11AC2F57000D4660D /* AndroidMaterialsTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidMaterialsTextFieldTests.swift; sourceTree = "<group>"; };
+		CD4E13CF1AC31AC600D4660D /* AndroidTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndroidTextField.swift; sourceTree = "<group>"; };
+		CD4E13D11AC31B5900D4660D /* AndroidTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AndroidTextField.xib; sourceTree = "<group>"; };
+		CD4E13D31AC3368700D4660D /* AndroidTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndroidTextFieldDelegate.swift; sourceTree = "<group>"; };
+		CD4E13D61AC446BA00D4660D /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		CD4E13D71AC446BA00D4660D /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		CD4E13D81AC446BA00D4660D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		CD4E13D91AC446BA00D4660D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CD4E13DA1AC446BA00D4660D /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		CD4E13DB1AC446BA00D4660D /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		CD4E13DC1AC446BA00D4660D /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		CD4E13DD1AC446BA00D4660D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		CD4E13DE1AC446BA00D4660D /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		CD4E13DF1AC446BA00D4660D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		CD4E13E01AC446BA00D4660D /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		CD4E13E11AC446BA00D4660D /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		CD4E13E21AC446BA00D4660D /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		CD4E13E31AC446BA00D4660D /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CD4E13E41AC446BA00D4660D /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		CD4E13E51AC446BA00D4660D /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		CD4E13E61AC446BA00D4660D /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		CD4E13E71AC446BA00D4660D /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD4E13A31AC2F57000D4660D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4E13B81AC2F57000D4660D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD4E139D1AC2F57000D4660D = {
+			isa = PBXGroup;
+			children = (
+				CD4E13A81AC2F57000D4660D /* AndroidMaterialsTextField */,
+				CD4E13BE1AC2F57000D4660D /* AndroidMaterialsTextFieldTests */,
+				CD4E13A71AC2F57000D4660D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD4E13A71AC2F57000D4660D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD4E13A61AC2F57000D4660D /* AndroidMaterialsTextField.app */,
+				CD4E13BB1AC2F57000D4660D /* AndroidMaterialsTextFieldTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD4E13A81AC2F57000D4660D /* AndroidMaterialsTextField */ = {
+			isa = PBXGroup;
+			children = (
+				CD4E13D51AC4469E00D4660D /* Resources */,
+				CD4E13AB1AC2F57000D4660D /* AppDelegate.swift */,
+				CD4E13AD1AC2F57000D4660D /* ViewController.swift */,
+				CD4E13AF1AC2F57000D4660D /* Main.storyboard */,
+				CD4E13B21AC2F57000D4660D /* Images.xcassets */,
+				CD4E13B41AC2F57000D4660D /* LaunchScreen.xib */,
+				CD4E13A91AC2F57000D4660D /* Supporting Files */,
+				CD4E13CF1AC31AC600D4660D /* AndroidTextField.swift */,
+				CD4E13D11AC31B5900D4660D /* AndroidTextField.xib */,
+				CD4E13D31AC3368700D4660D /* AndroidTextFieldDelegate.swift */,
+			);
+			path = AndroidMaterialsTextField;
+			sourceTree = "<group>";
+		};
+		CD4E13A91AC2F57000D4660D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD4E13AA1AC2F57000D4660D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD4E13BE1AC2F57000D4660D /* AndroidMaterialsTextFieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD4E13C11AC2F57000D4660D /* AndroidMaterialsTextFieldTests.swift */,
+				CD4E13BF1AC2F57000D4660D /* Supporting Files */,
+			);
+			path = AndroidMaterialsTextFieldTests;
+			sourceTree = "<group>";
+		};
+		CD4E13BF1AC2F57000D4660D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD4E13C01AC2F57000D4660D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD4E13D51AC4469E00D4660D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD4E13D61AC446BA00D4660D /* Roboto-Black.ttf */,
+				CD4E13D71AC446BA00D4660D /* Roboto-BlackItalic.ttf */,
+				CD4E13D81AC446BA00D4660D /* Roboto-Bold.ttf */,
+				CD4E13D91AC446BA00D4660D /* Roboto-BoldItalic.ttf */,
+				CD4E13DA1AC446BA00D4660D /* Roboto-Italic.ttf */,
+				CD4E13DB1AC446BA00D4660D /* Roboto-Light.ttf */,
+				CD4E13DC1AC446BA00D4660D /* Roboto-LightItalic.ttf */,
+				CD4E13DD1AC446BA00D4660D /* Roboto-Medium.ttf */,
+				CD4E13DE1AC446BA00D4660D /* Roboto-MediumItalic.ttf */,
+				CD4E13DF1AC446BA00D4660D /* Roboto-Regular.ttf */,
+				CD4E13E01AC446BA00D4660D /* Roboto-Thin.ttf */,
+				CD4E13E11AC446BA00D4660D /* Roboto-ThinItalic.ttf */,
+				CD4E13E21AC446BA00D4660D /* RobotoCondensed-Bold.ttf */,
+				CD4E13E31AC446BA00D4660D /* RobotoCondensed-BoldItalic.ttf */,
+				CD4E13E41AC446BA00D4660D /* RobotoCondensed-Italic.ttf */,
+				CD4E13E51AC446BA00D4660D /* RobotoCondensed-Light.ttf */,
+				CD4E13E61AC446BA00D4660D /* RobotoCondensed-LightItalic.ttf */,
+				CD4E13E71AC446BA00D4660D /* RobotoCondensed-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD4E13A51AC2F57000D4660D /* AndroidMaterialsTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD4E13C51AC2F57000D4660D /* Build configuration list for PBXNativeTarget "AndroidMaterialsTextField" */;
+			buildPhases = (
+				CD4E13A21AC2F57000D4660D /* Sources */,
+				CD4E13A31AC2F57000D4660D /* Frameworks */,
+				CD4E13A41AC2F57000D4660D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AndroidMaterialsTextField;
+			productName = AndroidMaterialsTextField;
+			productReference = CD4E13A61AC2F57000D4660D /* AndroidMaterialsTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD4E13BA1AC2F57000D4660D /* AndroidMaterialsTextFieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD4E13C81AC2F57000D4660D /* Build configuration list for PBXNativeTarget "AndroidMaterialsTextFieldTests" */;
+			buildPhases = (
+				CD4E13B71AC2F57000D4660D /* Sources */,
+				CD4E13B81AC2F57000D4660D /* Frameworks */,
+				CD4E13B91AC2F57000D4660D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD4E13BD1AC2F57000D4660D /* PBXTargetDependency */,
+			);
+			name = AndroidMaterialsTextFieldTests;
+			productName = AndroidMaterialsTextFieldTests;
+			productReference = CD4E13BB1AC2F57000D4660D /* AndroidMaterialsTextFieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD4E139E1AC2F57000D4660D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Juan Manuel Pereira";
+				TargetAttributes = {
+					CD4E13A51AC2F57000D4660D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CD4E13BA1AC2F57000D4660D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CD4E13A51AC2F57000D4660D;
+					};
+				};
+			};
+			buildConfigurationList = CD4E13A11AC2F57000D4660D /* Build configuration list for PBXProject "AndroidMaterialsTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD4E139D1AC2F57000D4660D;
+			productRefGroup = CD4E13A71AC2F57000D4660D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD4E13A51AC2F57000D4660D /* AndroidMaterialsTextField */,
+				CD4E13BA1AC2F57000D4660D /* AndroidMaterialsTextFieldTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD4E13A41AC2F57000D4660D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4E13EA1AC446BA00D4660D /* Roboto-Bold.ttf in Resources */,
+				CD4E13EE1AC446BA00D4660D /* Roboto-LightItalic.ttf in Resources */,
+				CD4E13F61AC446BA00D4660D /* RobotoCondensed-Italic.ttf in Resources */,
+				CD4E13F51AC446BA00D4660D /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				CD4E13F01AC446BA00D4660D /* Roboto-MediumItalic.ttf in Resources */,
+				CD4E13EC1AC446BA00D4660D /* Roboto-Italic.ttf in Resources */,
+				CD4E13ED1AC446BA00D4660D /* Roboto-Light.ttf in Resources */,
+				CD4E13B11AC2F57000D4660D /* Main.storyboard in Resources */,
+				CD4E13EB1AC446BA00D4660D /* Roboto-BoldItalic.ttf in Resources */,
+				CD4E13E91AC446BA00D4660D /* Roboto-BlackItalic.ttf in Resources */,
+				CD4E13F21AC446BA00D4660D /* Roboto-Thin.ttf in Resources */,
+				CD4E13F11AC446BA00D4660D /* Roboto-Regular.ttf in Resources */,
+				CD4E13F81AC446BA00D4660D /* RobotoCondensed-LightItalic.ttf in Resources */,
+				CD4E13B61AC2F57000D4660D /* LaunchScreen.xib in Resources */,
+				CD4E13F91AC446BA00D4660D /* RobotoCondensed-Regular.ttf in Resources */,
+				CD4E13EF1AC446BA00D4660D /* Roboto-Medium.ttf in Resources */,
+				CD4E13F71AC446BA00D4660D /* RobotoCondensed-Light.ttf in Resources */,
+				CD4E13F31AC446BA00D4660D /* Roboto-ThinItalic.ttf in Resources */,
+				CD4E13F41AC446BA00D4660D /* RobotoCondensed-Bold.ttf in Resources */,
+				CD4E13E81AC446BA00D4660D /* Roboto-Black.ttf in Resources */,
+				CD4E13B31AC2F57000D4660D /* Images.xcassets in Resources */,
+				CD4E13D21AC31B5900D4660D /* AndroidTextField.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4E13B91AC2F57000D4660D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD4E13A21AC2F57000D4660D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4E13AE1AC2F57000D4660D /* ViewController.swift in Sources */,
+				CD4E13D01AC31AC700D4660D /* AndroidTextField.swift in Sources */,
+				CD4E13AC1AC2F57000D4660D /* AppDelegate.swift in Sources */,
+				CD4E13D41AC3368700D4660D /* AndroidTextFieldDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4E13B71AC2F57000D4660D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4E13C21AC2F57000D4660D /* AndroidMaterialsTextFieldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD4E13BD1AC2F57000D4660D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD4E13A51AC2F57000D4660D /* AndroidMaterialsTextField */;
+			targetProxy = CD4E13BC1AC2F57000D4660D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD4E13AF1AC2F57000D4660D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD4E13B01AC2F57000D4660D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD4E13B41AC2F57000D4660D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD4E13B51AC2F57000D4660D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD4E13C31AC2F57000D4660D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD4E13C41AC2F57000D4660D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD4E13C61AC2F57000D4660D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AndroidMaterialsTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD4E13C71AC2F57000D4660D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AndroidMaterialsTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD4E13C91AC2F57000D4660D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AndroidMaterialsTextFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AndroidMaterialsTextField.app/AndroidMaterialsTextField";
+			};
+			name = Debug;
+		};
+		CD4E13CA1AC2F57000D4660D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AndroidMaterialsTextFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AndroidMaterialsTextField.app/AndroidMaterialsTextField";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD4E13A11AC2F57000D4660D /* Build configuration list for PBXProject "AndroidMaterialsTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4E13C31AC2F57000D4660D /* Debug */,
+				CD4E13C41AC2F57000D4660D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD4E13C51AC2F57000D4660D /* Build configuration list for PBXNativeTarget "AndroidMaterialsTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4E13C61AC2F57000D4660D /* Debug */,
+				CD4E13C71AC2F57000D4660D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD4E13C81AC2F57000D4660D /* Build configuration list for PBXNativeTarget "AndroidMaterialsTextFieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4E13C91AC2F57000D4660D /* Debug */,
+				CD4E13CA1AC2F57000D4660D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD4E139E1AC2F57000D4660D /* Project object */;
+}
