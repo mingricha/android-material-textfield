@@ -8,19 +8,20 @@ class AndroidTextFieldDelegate: UIView, UITextFieldDelegate {
   @IBOutlet weak var informationLabel: UILabel!
   @IBOutlet weak var counterLabel: UILabel!
 
+  @IBOutlet weak var titleLabelConstraint: NSLayoutConstraint!
   // Adroid text field constants
   let kClearKeyActionStringCompare = ""
 
   // Android text field properties
   var minLength: Int = 0
-  var maxLength: Int = 4
+  var maxLength: Int = 6
   var bottomLineNormalColor = UIColor.grayColor()
   var bottomLineErrorColor = UIColor.redColor()
   var currentTextFieldSize = 0
 
   // Android text field flags
   var isLengthEnabled: Bool = true
-  var isTitleEnabled: Bool = true
+  var isTitleEnabled: Bool = false
   var isHintEnabled: Bool = false
 
   required init(coder aDecoder: NSCoder) {
@@ -30,12 +31,23 @@ class AndroidTextFieldDelegate: UIView, UITextFieldDelegate {
   override func awakeFromNib() {
     textField.delegate = self
     self.updateTextFieldWithFlags()
+    self.setupCounterLabel()
     self.setupTestValues()
   }
 
   private func setupTestValues() {
-    counterLabel.text = self.minLength.description + "/" + self.maxLength.description
     self.titleLabel.text = "Email"
+    self.textField.placeholder = "Email"
+  }
+
+  private func setupCounterLabel() {
+    if (minLength == 0) {
+      counterLabel.text = "0" + "/" + self.maxLength.description
+    } else if (maxLength == 0) {
+      counterLabel.text = "0/" + self.minLength.description + "+"
+    } else {
+      counterLabel.text = "0/" + self.minLength.description + "-" + self.maxLength.description
+     }
   }
 
   private func updateTextFieldWithFlags() {
@@ -76,8 +88,14 @@ class AndroidTextFieldDelegate: UIView, UITextFieldDelegate {
     }
   }
 
-  private func updateCounterLabel(string: String) {
-    self.counterLabel.text = currentTextFieldSize.description + "/" + self.maxLength.description
+  private func updateCounterLabel() {
+    if (minLength == 0) {
+      self.counterLabel.text = currentTextFieldSize.description + "/" + self.maxLength.description
+    } else if (maxLength == 0) {
+      counterLabel.text = currentTextFieldSize.description + "/" + self.minLength.description + "+"
+    } else {
+      counterLabel.text = currentTextFieldSize.description + "/" + self.minLength.description + "-" + self.maxLength.description
+    }
   }
 
   private func checkLenghtEnabled() {
@@ -87,7 +105,7 @@ class AndroidTextFieldDelegate: UIView, UITextFieldDelegate {
   }
 
   private func checkLengthAndChangeBottomLine() {
-    if (currentTextFieldSize > maxLength || currentTextFieldSize < minLength) {
+    if ((currentTextFieldSize > maxLength && maxLength > 0) || (currentTextFieldSize < minLength && minLength > 0)) {
       self.setBottomLineErrorColor()
       self.setCountLabelErrorColor()
     } else {
@@ -116,9 +134,21 @@ class AndroidTextFieldDelegate: UIView, UITextFieldDelegate {
 
   func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
     self.updateCurrentTextFieldSize(range, string: string)
-    self.updateCounterLabel(string)
+    self.updateCounterLabel()
     self.checkLenghtEnabled()
 
     return true
+  }
+
+  func textFieldDidBeginEditing(textField: UITextField) {
+    self.animateTitleLabel()
+  }
+
+  private func animateTitleLabel() {
+    UIView.animateWithDuration(0.8, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.0, options: nil, animations: {
+      self.titleLabel.hidden = false
+      self.titleLabelConstraint.constant -= 20
+      self.titleLabel.layoutIfNeeded()
+    }, completion: nil)
   }
 }
